@@ -7,3 +7,4 @@
 ## Содержание
 - [01-docker-lesson](01-docker-lesson/): Практика 1: Docker
 - [02-docker-lesson](02-docker-lesson/): Практика 2: Docker Compose, WordPress и MariaDB
+- [03-docker-lesson](03-docker-lesson/): Практика 3: Docker Production-Ready

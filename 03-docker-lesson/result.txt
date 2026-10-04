@@ -1,0 +1,9 @@
+Имя: Виргиниюс Бондаренко
+Группа: ИТ-9.23.3-ДН
+
+Уровень 1: образ token-api:v1, размер 1.64GB, /health отвечает {"status":"ok"}.
+Уровень 2: образ token-api:v2 (multi-stage, alpine), размер 28.7MB (content size), gcc в финальном образе нет.
+Уровень 3: образ token-api:v3, запуск с --read-only --cap-drop ALL --security-opt no-new-privileges, healthcheck "healthy", пользователь appuser (uid 100), uvicorn с PID 1.
+
+Команда запуска Уровня 3:
+docker run -d --name secure-api -p 8080:8080 --read-only --cap-drop ALL --security-opt no-new-privileges token-api:v3
